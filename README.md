@@ -29,5 +29,5 @@ You can now use this along with `remark-slug` (must use), you can find an exampl
 You also need to import that css file, if you are using a preprocessor/bundler you can import from the package `remark-slug-anchor/dist/anchor.css`, if not use the cdn:
 
 ```html
-...
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remark-slug-anchor@0/dist/anchor.css" />
 ```

@@ -1,6 +1,6 @@
 {
   "name": "remark-slug-anchor",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Package to work with remark-slug to generate clickable anchor icons",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
