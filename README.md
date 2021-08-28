@@ -21,5 +21,13 @@ This package is [ESM only](https://gist.github.com/sindresorhus/a39789f98801d908
 Node 12+ is needed to use it and it must be `import`ed instead of `require`d.
 
 ```bash
-npm install remark-slug-anchor
+npm install remark-slug-anchor remark-slug
+```
+
+You can now use this along with `remark-slug` (must use), you can find an example [here](https://www.npmjs.com/package/remark-slug) of how to use `remark-slug` - include this package in the same way
+
+You also need to import that css file, if you are using a preprocessor/bundler you can import from the package `remark-slug-anchor/dist/anchor.css`, if not use the cdn:
+
+```html
+...
 ```
