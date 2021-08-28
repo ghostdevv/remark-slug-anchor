@@ -1,0 +1,47 @@
+{
+  "name": "remark-slug-anchor",
+  "version": "1.0.0",
+  "description": "Package to work with remark-slug to generate clickable anchor icons",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "sass css/anchor.scss css/anchor.css --no-source-map"
+  },
+  "dependencies": {
+    "unist-util-visit": "^4.0.0"
+  },
+  "devDependencies": {
+    "remark-slug": "^7.0.0",
+    "sass": "^1.38.1"
+  },
+  "peerDependencies": {
+    "remark-slug": "^7.0.0"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "src",
+    "css"
+  ],
+  "keywords": [
+    "remark-slug-anchor",
+    "remark",
+    "slug",
+    "slug anchor",
+    "anchor",
+    "markdown",
+    "remark slug anchor",
+    "remark plugin",
+    "plugin"
+  ],
+  "author": "GHOST ghostdevbusiness@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ghostdevv/remark-slug-anchor/issues"
+  },
+  "homepage": "https://github.com/ghostdevv/remark-slug-anchor#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghostdevv/remark-slug-anchor.git"
+  }
+}
