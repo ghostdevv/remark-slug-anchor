@@ -27,8 +27,7 @@
   "files": [
     "LICENSE",
     "README.md",
-    "src",
-    "css"
+    "dist"
   ],
   "keywords": [
     "remark-slug-anchor",
