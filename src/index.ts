@@ -1,6 +1,6 @@
 import { visit } from 'unist-util-visit';
 
-const anchor = (id) => `
+const anchor = (id: string) => `
 <a href="#${id}" class="slug-anchor">
     <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" viewBox="0 0 21 21">
         <path d="M14.102 10.31l2.273-2.882a2.71 2.71 0 00-4.255-3.356L9.847 6.954a2.71 2.71 0 00.587 3.907s.886 1.57-.188 2.827A5.342 5.342 0 017.78 5.324l2.272-2.882a5.342 5.342 0 018.39 6.616l-2.273 2.882a5.32 5.32 0 01-1.943 1.537s.17-.966.125-1.585c-.042-.594-.325-1.49-.325-1.49l.076-.092z"/>
@@ -9,18 +9,26 @@ const anchor = (id) => `
 </a>
 `;
 
-export default () => (tree) => {
-    visit(tree, 'heading', (node) => {
-        const data = node.data || (node.data = {});
+import type { Transformer } from 'unified';
+import type { Root } from 'mdast';
 
-        if (data.id && node.children?.length) {
-            node.children = [
-                {
-                    type: 'html',
-                    value: anchor(data.id),
-                },
-                ...node.children,
-            ];
-        }
-    });
-};
+interface Data {
+    id?: string;
+}
+
+export default (): Transformer<Root, Root> =>
+    (tree): void => {
+        visit(tree, 'heading', (node) => {
+            const data: Data = node.data || (node.data = {});
+
+            if (data.id && node.children?.length) {
+                node.children = [
+                    {
+                        type: 'html',
+                        value: anchor(data.id),
+                    },
+                    ...node.children,
+                ];
+            }
+        });
+    };

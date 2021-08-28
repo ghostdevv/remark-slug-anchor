@@ -2,17 +2,24 @@
   "name": "remark-slug-anchor",
   "version": "1.0.0",
   "description": "Package to work with remark-slug to generate clickable anchor icons",
-  "main": "src/index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
-    "build": "sass css/anchor.scss css/anchor.css --no-source-map"
+    "build": "run-s build:*",
+    "build:css": "sass src/anchor.scss dist/anchor.css --no-source-map",
+    "build:typescript": "tsc"
   },
   "dependencies": {
-    "unist-util-visit": "^4.0.0"
+    "unist-util-visit": "^4.0.0",
+    "unified": "^10.1.0",
+    "mdast": "^3.0.0"
   },
   "devDependencies": {
+    "npm-run-all": "^4.1.5",
     "remark-slug": "^7.0.0",
-    "sass": "^1.38.1"
+    "sass": "^1.38.1",
+    "typescript": "^4.4.2"
   },
   "peerDependencies": {
     "remark-slug": "^7.0.0"
