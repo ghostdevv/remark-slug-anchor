@@ -40,7 +40,7 @@
     "remark plugin",
     "plugin"
   ],
-  "author": "GHOST ghostdevbusiness@gmail.com",
+  "author": "GHOST <ghostdevbusiness@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ghostdevv/remark-slug-anchor/issues"
