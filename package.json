@@ -2,7 +2,7 @@
   "name": "remark-slug-anchor",
   "version": "1.0.0",
   "description": "Package to work with remark-slug to generate clickable anchor icons",
-  "main": "index.js",
+  "main": "src/index.js",
   "type": "module",
   "scripts": {
     "build": "sass css/anchor.scss css/anchor.css --no-source-map"
