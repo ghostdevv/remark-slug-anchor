@@ -24,7 +24,7 @@ const createAnchor = (
             alt: '#',
 
             url: `data:image/svg+xml;base64,${encodeAnchor(
-                options.iconString ? options.iconString : anchor(options),
+                options.icon ? options.icon : anchor(options),
             )}`,
         },
     ],
@@ -37,7 +37,7 @@ const createAnchor = (
 
 export interface RemarkSlugAnchorOptions {
     color?: string;
-    iconString?: string;
+    icon?: string;
 }
 
 export default (
