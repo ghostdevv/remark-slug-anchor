@@ -21,8 +21,11 @@ const createAnchor = (
     children: [
         {
             type: 'image',
-            url: `data:image/svg+xml;base64,${encodeAnchor(anchor(options))}`,
             alt: '#',
+
+            url: `data:image/svg+xml;base64,${encodeAnchor(
+                options.iconString ? options.iconString : anchor(options),
+            )}`,
         },
     ],
     data: {
@@ -34,6 +37,7 @@ const createAnchor = (
 
 export interface RemarkSlugAnchorOptions {
     color?: string;
+    iconString?: string;
 }
 
 export default (
