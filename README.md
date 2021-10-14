@@ -56,3 +56,5 @@ Options:
 
 - `icon`: <br />
     You can pass in your own **svg** icon, with this option
+
+    > Must be a string as it's encoded to be used as an anchor
