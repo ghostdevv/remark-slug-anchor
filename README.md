@@ -11,7 +11,7 @@ Your code:
 
 Your page:
 
-![](https://i.imgur.com/1Qmj4Dl.png)
+![](https://i.imgur.com/f04B9Bl.png)
 
 <br>
 
